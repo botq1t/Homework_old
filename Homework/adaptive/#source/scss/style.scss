@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+%vid {
+	background: rgba(255, 0, 0, 0.15);
+	border: 3px solid blue;
+}
+
+body {
+	font-family: Lato;
+}
+
+.wrapper {
+	// min-height: 4991px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.container {
+	max-width: 100%;
+}
+
+// Header
+
+.header {
+	&__image {
+		img {
+			width: 100%;
+
+		}
+	}
+}
+
+.navigation {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 35px 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 13px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #4d4959;
+	&__logo {
+		margin: 0 63px;
+		// position: relative;
+	}
+	&__row {
+		// padding: 0 110px;
+	}
+
+	&__link {
+		position: relative;
+		color: inherit;
+	}
+
+	&__dot {
+		margin: 0 30px;
+	}
+
+}
+
+// 2nd block
+
+.container_newgeneration {
+	max-width: 1085px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.newgeneration {
+	padding: 117px 0 142px;
+	background: #f7f7f7;
+	&__raw {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__image {
+		padding: 0 0 35px 0;
+		img {
+			width: 52px;
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #353738;
+		padding: 0 0 35px 0;
+	}
+
+	&__body {
+		text-align: center;
+		font-size: 18px;
+		line-height: 34px;
+		font-weight: 400;
+		color: #848789;
+	}
+
+}
+
+
+
+// Footer
+
+.container_footer {
+	max-width: 1100px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.footer {
+	padding: 100px 0;
+	background: #f7f7f7;
+	&__raw {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		// @extend %vid;
+		color: #848789;
+		flex: 1 1 33.333%;
+
+	}
+
+	&__item_1 {
+		text-align: left;
+		p {
+			line-height: 20px;
+			&:first-child {
+				font-size: 16px;
+				font-weight: 700;
+			}
+			&:last-child {
+				font-size: 13.9px;
+				font-weight: 400;
+				font-style: italic;
+			}
+		}
+	}
+
+	&__item_2 {
+		margin: 0 -7.5px;
+		display: flex;
+		justify-content: center;
+		img {
+
+			padding: 0 7.5px;
+		}
+	}
+
+	&__item_3 {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		text-align: right;
+		position: relative;
+		font-size: 13.9px;
+		line-height: 17px;
+		font-weight: 400;
+		font-style: italic;
+		color: #848789;
+		p {
+			margin: 0 10px 0 0;
+			padding: 0 0 2px 0;
+		}
+		img {
+			display: inline-block;
+			width: 35px;
+		}
+	}
+
+}
