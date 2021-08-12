@@ -126,6 +126,7 @@ body {
   padding: 10px 0 10px 80px;
   letter-spacing: 3px;
   color: #141414;
+  text-shadow: 1px 1px 1px #2e0846;
 }
 @media (max-width: 768px) {
   .list__link {
@@ -139,7 +140,7 @@ body {
 }
 @media (max-width: 768px) {
   .list__link:hover {
-    background: url("../img/arrow.svg") 25px/35px no-repeat;
+    background: #d2bce3 url("../img/arrow.svg") 25px/35px no-repeat;
   }
 }
 .list__link:active {
@@ -147,6 +148,6 @@ body {
 }
 @media (max-width: 768px) {
   .list__link:active {
-    background: url("../img/arrow.svg") 25px/35px no-repeat;
+    background: #ac96bd url("../img/arrow.svg") 25px/35px no-repeat;
   }
 }
